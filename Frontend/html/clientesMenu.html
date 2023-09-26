@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorar Tipos de Medicamentos - Proyecto Farmacias</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="../imag/logos/pharmacy.ico"> 
+
+    <style>
+        /* Tus estilos CSS aquí */
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="profile-bar">
+            <a href="perfil.html" class="profile-button" id="profileBtn"><i class="fas fa-user"></i></a>
+            <a href="../html/login.html" class="profile-button" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> </a>
+        </div>
+        <div class="explorar-medicamentos">
+            <h2>Explorar Tipos de Medicamentos</h2>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Buscar tipo de medicamento">
+                <button id="searchButton"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="tipos-medicamentos">
+                <div class="tipo-medicamento">
+                    <i class="fas fa-pills"></i>
+                    <p>Tipo 1</p>
+                    <button class="agregar-carrito"><i class="fas fa-cart-plus"></i> Agregar al Carrito</button>
+                </div>
+                <div class="tipo-medicamento">
+                    <i class="fas fa-syringe"></i>
+                    <p>Tipo 2</p>
+                    <button class="agregar-carrito"><i class="fas fa-cart-plus"></i> Agregar al Carrito</button>
+                </div>
+                <!-- Agregar más tipos de medicamentos aquí -->
+
+            </div>
+        </div>
+        <div class="back-button">
+            <a href="../html/productos.html"><i class="fas fa-chevron-left" style="color: white;"></i> Volver a Productos</a>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FARMACIA IS</title>
+    <link rel="stylesheet" href="../css/listar-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="./imag/logos/pharmacy.ico"> 
+</head>
+<body name="suplemento">
+    <div class="content">
+        <h1>Listado de Vitaminas</h1>
+
+        <form class="search-form">
+            <label for="idProducto">Buscar por ID de Medicamento:</label>
+            <input type="text" id="idProducto" name="idProducto" required>
+            <button type="submit">Buscar</button>
+        </form>
+
+        <table id="containerMedicamento" class="clientes-table">
+            <thead>
+                <tr>
+                    <th>ID_Suplemento</th>
+                    <th>Descripción</th>
+                    <th>Nombre Suplemento</th>
+                    <th>Fecha de Vencimiento</th>
+                    <th>Fecha de Elaboración</th>
+                    <th>Prohibiciones</th>
+                    <th>Existencias</th>
+                    <th>ID Droguería</th>
+                    <th>IMAGEN</th>
+                </tr>
+            </thead>
+            <tbody id="containersuplemento">
+                <tr>
+                    <td>1</td>
+                    <td>Suplemento de Calcio</td>
+                    <td>21st Century Suplemento de calcio, 600 mg 400 unidades</td>
+                    <td>2023-08-10</td>
+                    <td>2023-03-08</td>
+                    <td>Consultar con su Medico</td>
+                    <td>500</td>
+                    <td>3</td>
+                    <td><img src="../imag/Vitaminas/21st Century Suplemento de calcio, 600 mg 400 unidades.jpg" width="100px"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Suplemento de Hierro</td>
+                    <td>FERROMAX B,12 10ML AMPBEB X15</td>
+                    <td>2023-08-10</td>
+                    <td>2023-03-08</td>
+                    <td>Consultar con su Medico</td>
+                    <td>300</td>
+                    <td>3</td>
+                    <td><img src="../imag/Vitaminas/FERROMAX B,12 10ML AMPBEB X15.png" width="100px"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Suplemento de Vitamina D</td>
+                    <td>suplemento-nutricional-l-vitamin-way D</td>
+                    <td>2023-08-10</td>
+                    <td>2023-03-08</td>
+                    <td>Consultar con su Medico</td>
+                    <td>500</td>
+                    <td>3</td>
+                    <td><img src="../imag/Vitaminas/suplemento-nutricional-l-vitamin-way-vitamina-d-x-30-capsulas.webp" width="100px"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Suplemento de Omega-3</td>
+                    <td>Kirkland Omega-3 Aceite de pescado 1000 mg 300 cápsulas</td>
+                    <td>2023-08-10</td>
+                    <td>2023-03-08</td>
+                    <td>Consultar con su Medico</td>
+                    <td>500</td>
+                    <td>3</td>
+                    <td><img src="../imag/Vitaminas/Kirkland Omega-3 Aceite de pescado 1000 mg 300 cápsulas.jpg" width="100px"></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Suplemento Multivitaminico</td>
+                    <td>multivitaminicop</td>
+                    <td>2023-08-10</td>
+                    <td>2023-03-08</td>
+                    <td>Consultar con su Medico</td>
+                    <td>500</td>
+                    <td>3</td>
+                    <td><img src="../imag/Vitaminas/multivitaminicop.png" width="100px"></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <div class="back-button">
+            <a href="../index.html"><i class="fas fa-chevron-left"></i> Volver a inicio</a>
+        </div>
+    </div>
+    <script src="./js/axios.js"></script>
+    <script src="../js/render.js"></script>
+    <script src="./js/controllerQuerys.js"></script>
+    <script>
+      let ps = new Peticiones();
+    </script>
+</body>
+</html>

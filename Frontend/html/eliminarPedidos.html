@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Pedido - Proyecto Farmacias</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Agrega el archivo de estilos CSS específicos de esta página -->
+    <link rel="icon" href="../imag/logos/pharmacy.ico"> 
+
+</head>
+<body>
+    <div class="content">
+        
+        <h1>Eliminar Pedido</h1>
+
+        <form class="search-form">
+            <label for="idPedido">Buscar por ID de Pedido:</label>
+            <input type="text" id="idPedido" name="idPedido" required>
+            <button type="submit">Buscar</button>
+        </form>
+
+        <div class="pedido-info" id="pedidoInfo">
+            <!-- Aquí se mostrará la información del pedido seleccionado -->
+        </div>
+
+        <form class="delete-form" id="deleteForm">
+            <!-- Aquí se mostrarán los detalles del pedido para confirmar la eliminación -->
+        </form>
+        <div class="back-button">
+            <a href="../html/admiPedidos.html"><i class="fas fa-chevron-left" style="color: white;"></i> Volver a Pedidos</a>
+        </div>
+
+    </div>
+    <script src="../js/script.js"></script>
+    <script src="script.js"></script> <!-- Agrega el archivo de scripts JS específicos de esta página -->
+</body>
+</html>

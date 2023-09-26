@@ -1,0 +1,62 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>My App</title>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+  <h1>Hello, World!</h1>
+
+  <form action="Cliente">
+      <input id="idText" type="text">
+      <button type="button" onclick="pedirCliente()">Pedir Cliente</button>
+  </form>
+  <div id="container"></div>
+
+
+
+  
+  <script src="controllerFronted.js"></script>
+  <script>
+
+    //funcion para pedir un Cliente
+    function pedirCliente(){
+      
+      let nombreTablaSingular = 'cliente';
+      let clienteId=document.getElementById('idText').value;//obteniendo contenido del input
+
+      //hacer peticiones con axios al servidor
+      
+      axios.get(`http://localhost:8888/${nombreTablaSingular}/${clienteId}`)
+        .then(function(response) { //respuesta de la peticion
+
+          //lo que queres que haga cuando reciba una respuesta
+          
+          
+          //document.write( //haciendo pruebas
+          //  JSON.stringify(
+          //    response.data.result)
+          //);
+          
+          console.log(response.data);//muestra en pantalla el json recibido
+          
+          let clienteHTML = mostrarClienteRecibido(response.data.result);
+          
+          document.getElementById('container').innerHTML=`${clienteHTML}`;
+
+        }).catch(function(error) {
+          document.write(error);
+          console.error(error);
+      });
+    }
+    
+  </script>
+</body>
+</html>

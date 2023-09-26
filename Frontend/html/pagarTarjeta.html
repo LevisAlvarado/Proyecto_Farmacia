@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación de Pago - Proyecto Farmacias</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="../imag/logos/pharmacy.ico"> 
+    <style>
+        /* Tus estilos CSS aquí */
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="profile-bar">
+            <a href="perfil.html" class="profile-button" id="profileBtn"><i class="fas fa-user"></i></a>
+            <a href="../html/login.html" class="profile-button" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> </a>
+        </div>
+        <div class="verificacion-pago">
+            <h2>Verificación de Pago</h2>
+            <p>Por favor, verifica y completa los detalles de tu pago:</p>
+            <form class="tarjeta-form">
+                <label for="numeroTarjeta">Número de Tarjeta:</label>
+                <input type="text" id="numeroTarjeta" name="numeroTarjeta" required><br><br>
+                
+                <label for="nombreTitular">Nombre del Titular:</label>
+                <input type="text" id="nombreTitular" name="nombreTitular" required><br><br>
+                
+                <label for="fechaExpiracion">Fecha de Expiración:</label>
+                <input type="text" id="fechaExpiracion" name="fechaExpiracion" placeholder="MM/AA" required><br><br>
+                
+                <label for="codigoSeguridad">Código de Seguridad:</label>
+                <input type="text" id="codigoSeguridad" name="codigoSeguridad" required><br><br>
+                
+                <button type="submit" class="boton-verificar"><i class="fas fa-check"></i> Verificar y Generar Factura</button>
+            </form>
+        </div>
+        <div class="back-button">
+            <a href="../html/carrito.html"><i class="fas fa-chevron-left" style="color: white;"></i> Volver al Carrito</a>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+</html>
+

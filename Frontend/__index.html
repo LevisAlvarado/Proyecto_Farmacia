@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FARMACIA IS</title>
+    <link rel="stylesheet" href="css/index-style.css"> 
+    <link rel="icon" href="./imag/logos/pharmacy.ico">
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
+</head>
+<body>
+    <header>
+        <h1>FARMACIA IS</h1>
+        <nav>
+            <ul>
+                    <li><a href="html/login.html" class="log-button"><img  src="./imag/iconos/perfil-del-usuario.png" alt="log-button">Iniciar seccion</a></li>
+                    <li><a href="" class="car-button" ><img src="./imag/iconos/carrito-de-compras.png" alt="car-button"></a></li>
+                    <div class="dropdown">
+                        <li class="prod-button">
+                        <a href="#"><img src="./imag/iconos/medicamento.png" alt="car-button">Productos</a>
+                        <div class="dropdown-content">
+                        <a href="./html/listarMedicamentos.html">Medicamentos</a>
+                        
+
+                        <!-- <a href="">YouTube</a> 
+                          onclick="peticionesSuplemento.getSuplementos()" 
+                        -->
+                        <a href="listarVitaminas.html">Vitaminas</a>
+
+                        </div>
+                        </li>
+                      </div>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="fondos">
+                  <h1>Bienvenido a Farmacia IS</h1>
+                  <p>Tu lugar confiable para obtener medicamentos y productos de salud.</p>
+              </div>
+
+              <h2>Sobre Nosotros</h2>
+              <p>Somos una farmacia comprometida con la salud y el bienestar de nuestros clientes...</p>
+  
+              <h2>Contacto</h2>
+              <p>Si tienes preguntas o necesitas ayuda, no dudes en ponerte en contacto con nosotros...</p>
+    </section>
+    
+
+        
+
+    <footer>
+        <p>&copy; 2023 FARMACIA IS. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="./js/AxiosClass.js"></script>
+    <script src="./js/HandlerView.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+      //peticionesSuplemento = new Peticiones();
+    </script>
+
+
+</body>
+<style>
+ 
+    .fondos {
+        background-image: url("imag/fondos/rebaja_precios_medicamentos.jpg__1440x2000_q70_subsampling-2.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        text-align: center;
+        padding: 20vh;
+        color: #1e1c1c;
+    }
+    /*Lista Plegable*/
+    .dropdown {
+        display: inline-block;
+        position: relative;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        width: 100%;
+        overflow: auto;
+        box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .dropdown-content a {
+        display: block;
+        color: #000000;
+        padding: 5px;
+        text-decoration: none;
+      }
+      .dropdown-content a:hover {
+        color: #FFFFFF;
+        background-color: #00A4BD;
+      }
+</style>
+</html>
+
+</html>
